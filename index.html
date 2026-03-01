@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Pop Artist Profiles</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">K-Pop Stars</h1>
+        <div class="nav-dropdown">
+          <button class="dropdown-btn" onclick="toggleSidebar()">
+            Select Artist
+          </button>
+          <div class="dropdown-content" id="artistSidebar">
+            <a href="#blackpink" onclick="closeSidebar()">BLACKPINK</a>
+            <a href="#bts" onclick="closeSidebar()">BTS</a>
+            <a href="#twice" onclick="closeSidebar()">TWICE</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-section">
+        <div class="hero-carousel">
+          <div class="hero-slide">
+            <img
+              src="https://www.nme.com/wp-content/uploads/2022/08/BLACKPINK-pink-venom-single-music-video-album-Born-pink.jpg"
+              alt="BLACKPINK Hero"
+            />
+            <h2 class="hero-caption">BLACKPINK</h2>
+          </div>
+          <div class="hero-slide">
+            <img
+              src="https://variety.com/wp-content/uploads/2020/09/bts-variety-cover-shoot-full-band-1-16x9-1.jpg?w=1000&h=563&crop=1"
+              alt="BTS Hero"
+            />
+            <h2 class="hero-caption">BTS</h2>
+          </div>
+          <div class="hero-slide">
+            <img
+              src="https://www.jame-world.com/media/image/2022-03/_16-9_12119.jpg"
+              alt="TWICE Hero"
+            />
+            <h2 class="hero-caption">TWICE</h2>
+          </div>
+        </div>
+        <div class="hero-dots"></div>
+      </div>
+
+      <div class="container">
+        <div>
+          <article id="blackpink">
+            <p>
+              BLACKPINK is a South Korean girl group formed by YG Entertainment,
+              consisting of members Jisoo, Jennie, Rosé, and Lisa.
+            </p>
+
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img
+                    src="https://www.kpopn.com/upload/2aef99c67d0062b84872.jpg"
+                    alt="BLACKPINK Group"
+                  />
+                  <p>BLACKPINK Group Photo</p>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://www.hallyusg.net/wp-content/uploads/2023/08/Blackpink_HallyuSG.jpg"
+                    alt="BLACKPINK Performance"
+                  />
+                  <p>Live Performance</p>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.3y530MRzuQaFmLUFOIupTAHaFi?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="BLACKPINK Awards"
+                  />
+                  <p>Award Show Appearance</p>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <div class="slider-dots"></div>
+              </div>
+            </div>
+
+            <div>
+              <h3>One of Their Music</h3>
+              &nbsp;
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/0NeNAcCVtGqLAAmf4FhWWT?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <button class="more-btn">More...</button>
+            <div class="more-content" style="display: none">
+              <div class="member-card">
+                <h4>Awards and Achievements</h4>
+                <ul>
+                  <li>
+                    Multiple Melon Music Awards and Mnet Asian Music Awards
+                  </li>
+                  <li>
+                    First K-pop girl group to reach 1 billion streams on Spotify
+                    (group milestone varies by release)
+                  </li>
+                  <li>
+                    International chart success including Billboard Hot 100
+                    entries
+                  </li>
+                </ul>
+              </div>
+              <div class="member-card">
+                <h4>Records & Notable Moments</h4>
+                <ul>
+                  <li>
+                    One of the most-viewed YouTube debuts and multiple music
+                    video records
+                  </li>
+                  <li>Large-scale world tours and stadium performances</li>
+                  <li>Brand endorsements and global ambassadorships</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article id="bts">
+            <p>
+              BTS is a South Korean boy band formed by Big Hit Entertainment.
+              The group consists of seven members: RM, Jin, Suga, J-Hope, Jimin,
+              V, and Jungkook.
+            </p>
+
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img
+                    src="https://former-cdn.cinra.net/uploads/img/column/201804-bts-photo1_full.jpg"
+                    alt="BTS Group"
+                  />
+                  <p>BTS Group Photo</p>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://d.ibtimes.com/en/full/2631254/bts.jpg"
+                    alt="BTS Performance"
+                  />
+                  <p>Live Performance</p>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://images.prestigeonline.com/wp-content/uploads/sites/5/2021/12/13092337/Untitled-design-87.png"
+                    alt="BTS Awards"
+                  />
+                  <p>Award Show Appearance</p>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <div class="slider-dots"></div>
+              </div>
+            </div>
+
+            <div>
+              <h3>One of Their Music</h3>
+              &nbsp;
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/4a9tbd947vo9K8Vti9JwcI?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <button class="more-btn">More...</button>
+            <div class="more-content" style="display: none">
+              <div class="member-card">
+                <h4>Awards and Achievements</h4>
+                <ul>
+                  <li>Multiple Billboard Music Awards</li>
+                  <li>Grammy Nominations</li>
+                  <li>American Music Awards</li>
+                </ul>
+              </div>
+              <div class="member-card">
+                <h4>World Records</h4>
+                <ul>
+                  <li>Most viewed YouTube video in 24 hours</li>
+                  <li>Most Twitter engagements</li>
+                  <li>First Korean act to top Billboard Hot 100</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article id="twice">
+            <p>
+              TWICE is a South Korean girl group formed by JYP Entertainment.
+              The group consists of nine members: Nayeon, Jeongyeon, Momo, Sana,
+              Jihyo, Mina, Dahyun, Chaeyoung, and Tzuyu.
+            </p>
+
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img
+                    src="https://www.billboard.com/wp-content/uploads/2023/03/feature-TWICE-women-in-music-billboard-2023-bb-sami-drasin-12-1548.jpg?w=1024"
+                    alt="TWICE Group"
+                  />
+                  <p>TWICE Group Photo</p>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://img.kpopdata.com/upload/content/819/895/981261cd55c325f43193.jpg"
+                    alt="TWICE Performance"
+                  />
+                  <p>Live Performance</p>
+                </div>
+                <div class="slide">
+                  <img
+                    src="https://lh3.googleusercontent.com/fLsb0F_NSMMENuc_ztYv7_HTCGfof_rj_IPXdePhwj68a66ahmZ1hJQBvqGvCmaVdTCQDNSW1wL_NKmbrKGX1_DLW0Ve1VHdMg=w1200-h630-rj-pp-e365"
+                    alt="TWICE Awards"
+                  />
+                  <p>Award Show Appearance</p>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <div class="slider-dots"></div>
+              </div>
+            </div>
+
+            <div>
+              <h3>One of Their Music</h3>
+              &nbsp;
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/5NcLyVjUgG0yfwHgr5t81w?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <button class="more-btn">More...</button>
+            <div class="more-content" style="display: none">
+              <div class="member-card">
+                <h4>Awards and Achievements</h4>
+                <ul>
+                  <li>Multiple Mnet Asian Music Awards</li>
+                  <li>Japan Gold Disc Awards</li>
+                  <li>Seoul Music Awards</li>
+                </ul>
+              </div>
+              <div class="member-card">
+                <h4>Records</h4>
+                <ul>
+                  <li>Best-selling K-pop girl group</li>
+                  <li>Most music show wins for a girl group</li>
+                  <li>First K-pop girl group to hold a Japanese dome tour</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside>
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search for an artist..."
+            />
+          </div>
+
+          <div class="artists-container">
+            <!-- Anggota BLACKPINK -->
+            <div class="artist-card" data-group="blackpink" data-name="jisoo">
+              <img
+                src="https://afamilycdn.com/150157425591193600/2022/9/22/e1erudwuyaakx9z-16636010945761096611490-1663816294968-16638162954651330660677.jpg"
+                alt="Jisoo"
+                class="profile-image"
+              />
+              <div class="artist-info">
+                <h3>BLACKPINK - Jisoo</h3>&nbsp;
+                <p>Full Name: Kim Jisoo</p>
+                <p>Position: Lead Vocalist, Visual</p>
+                <p>Birthday: January 3, 1995</p>
+                <p>Nationality: South Korean</p>
+              </div>
+            </div>
+
+            <div class="artist-card" data-group="blackpink" data-name="jennie">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.vWnruvMJq2GdB-ZvVNrk3gHaI3?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Jennie"
+                class="profile-image"
+              />
+              <div class="artist-info">
+                <h3>BLACKPINK - Jennie</h3>&nbsp;
+                <p>Full Name: Jennie Kim</p>
+                <p>Position: Main Rapper, Lead Vocalist</p>
+                <p>Birthday: January 16, 1996</p>
+                <p>Nationality: South Korean</p>
+              </div>
+            </div>
+
+            <!-- Anggota BTS -->
+            <div class="artist-card" data-group="bts" data-name="rm">
+              <img
+                src="https://vignette.wikia.nocookie.net/the-bangtan-boys/images/e/e7/RM_Lights_Boy_With_Luv_Promo_Picture.jpg/revision/latest?cb=20190728085859"
+                alt="RM"
+                class="profile-image"
+              />
+              <div class="artist-info">
+                <h3>BTS - RM</h3>&nbsp;
+                <p>Full Name: Kim Nam-joon</p>
+                <p>Position: Leader, Main Rapper</p>
+                <p>Birthday: September 12, 1994</p>
+                <p>Nationality: South Korean</p>
+              </div>
+            </div>
+
+            <div class="artist-card" data-group="bts" data-name="jungkook">
+              <img
+                src="https://media1.popsugar-assets.com/files/thumbor/YxLELH8P8OvotpAOQyBocJOlTXA/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2023/06/29/889/n/1922283/tmp_vZztfH_60c3580a6630e6f7_GettyImages-1389408711.jpg"
+                alt="Jungkook"
+                class="profile-image"
+              />
+              <div class="artist-info">
+                <h3>BTS - Jungkook</h3>&nbsp;
+                <p>Full Name: Jeon Jung-kook</p>
+                <p>Position: Main Vocalist, Lead Dancer</p>
+                <p>Birthday: September 1, 1997</p>
+                <p>Nationality: South Korean</p>
+              </div>
+            </div>
+
+            <!-- Anggota TWICE -->
+            <div class="artist-card" data-group="twice" data-name="nayeon">
+              <img
+                src="https://rare-gallery.com/mocahbig/1382719-Nayeon-Im-Na-Yeon-TWICE-Kpop-Scientist-Formula.jpg"
+                alt="Nayeon"
+                class="profile-image"
+              />
+              <div class="artist-info">
+                <h3>TWICE - Nayeon</h3>&nbsp;
+                <p>Full Name: Im Na-yeon</p>
+                <p>Position: Lead Vocalist, Lead Dancer</p>
+                <p>Birthday: September 22, 1995</p>
+                <p>Nationality: South Korean</p>
+              </div>
+            </div>
+
+            <div class="artist-card" data-group="twice" data-name="tzuyu">
+              <img
+                src="https://kpoplife.com/wp-content/uploads/2024/08/tzuyu1-731x1024.jpeg"
+                alt="Tzuyu"
+                class="profile-image"
+              />
+              <div class="artist-info">
+                <h3>TWICE - Tzuyu</h3>&nbsp;
+                <p>Full Name: Chou Tzuyu</p>
+                <p>Position: Lead Dancer, Visual</p>
+                <p>Birthday: June 14, 1999</p>
+                <p>Nationality: Taiwanese</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 K-Pop Stars Biographies. Made with Love by Ilham Muharam</p>
+    </footer>
+  </body>
+</html>
