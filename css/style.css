@@ -6,9 +6,6 @@
   --text-color: #574240;
 }
 
-/* Add viewport meta tag in HTML if not present */
-/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
-
 * {
   margin: 0;
   padding: 0;
@@ -18,12 +15,10 @@
 
 body {
   background-color: var(--accent-color);
-  background-image: url("./assets/bg.jpg");
+  background-image: url("../assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   color: var(--text-color);
   min-height: 100vh;
 }
@@ -31,14 +26,13 @@ body {
 /* Gaya Header */
 header {
   background: rgba(255, 158, 170, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 nav {
@@ -47,9 +41,6 @@ nav {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
-  width: 100%;
-  min-width: 0; /* Fix flex overflow */
 }
 
 .logo {
@@ -57,7 +48,6 @@ nav {
   font-weight: bold;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .nav-dropdown {
@@ -78,7 +68,6 @@ nav {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .dropdown-btn:hover {
@@ -89,27 +78,57 @@ nav {
 .dropdown-content {
   display: none;
   position: fixed;
-  top: 80px;
-  right: 0; /* Changed from -300px */
-  width: 100%; /* Full width on mobile */
-  max-width: 300px; /* Desktop max width */
+  top: 70px;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
   height: calc(100vh - 72px);
   background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 99;
   padding: 2rem;
   overflow-y: auto;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
   transition: transform 0.3s ease;
   box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
-  transform: translateX(100%); /* Changed from -300px */
+  transform: translateX(100%);
+}
+
+.dropdown-content a {
+  background: rgba(255, 158, 170, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: var(--text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: rgba(255, 158, 170, 0.6);
+  transform: translateX(-5px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-content.show {
   display: flex;
-  transform: translateX(0); /* Changed from -300px */
+  transform: translateX(0);
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
@@ -147,8 +166,8 @@ h2 {
 aside {
   flex: 1;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 1.5rem;
   border-radius: 20px;
   height: 560px;
@@ -159,7 +178,7 @@ aside {
   min-width: 350px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 .search-container {
@@ -258,8 +277,8 @@ aside {
 /* Gaya Artikel */
 article {
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   padding: 2.5rem;
   border-radius: 20px;
   margin-bottom: 2.5rem;
@@ -314,8 +333,8 @@ article:hover {
 /* Gaya Footer */
 footer {
   background: rgba(255, 158, 170, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   color: white;
   padding: 1.6rem 1rem;
   text-align: center;
@@ -336,6 +355,7 @@ footer {
     width: 100%;
     height: auto;
     max-height: none;
+    margin-bottom: 2rem;
   }
 
   main {
@@ -354,6 +374,14 @@ footer {
     width: 150px;
     height: 180px;
   }
+
+  .dropdown-content {
+    max-width: none;
+  }
+
+  .hero-section {
+    height: 300px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -361,6 +389,7 @@ footer {
     flex-direction: row;
     gap: 0.5rem;
     padding: 0 0.5rem;
+    width: 100%;
   }
 
   .logo {
@@ -372,7 +401,12 @@ footer {
     min-width: 0;
   }
 
+  .nav-dropdown {
+    flex: 0 0 auto;
+  }
+
   .dropdown-btn {
+    white-space: nowrap;
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
     flex-shrink: 0;
@@ -380,15 +414,22 @@ footer {
 
   .dropdown-content {
     width: 100%;
+    max-width: none;
     right: 0;
     left: 0;
-    max-width: none;
     padding: 1rem;
   }
 
   .container {
     margin: 1rem auto;
     padding: 0 0.5rem;
+  }
+
+  aside {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    padding: 1rem;
   }
 
   article {
@@ -401,7 +442,7 @@ footer {
   }
 
   .hero-section {
-    height: 250px;
+    height: 200px;
     margin-bottom: 1rem;
   }
 
@@ -426,12 +467,9 @@ footer {
     font-size: 0.9rem;
   }
 
-  .slider {
-    gap: 0;
-  }
-
   .slide img {
     max-width: 100%;
+    height: auto;
   }
 }
 
@@ -559,8 +597,8 @@ footer {
 /* Kartu Artis / Anggota */
 .artist-group-card {
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 12px;
   padding: 1rem;
   margin: 0 0 1rem 0;
