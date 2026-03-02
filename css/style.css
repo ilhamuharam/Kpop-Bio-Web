@@ -80,12 +80,8 @@ nav {
   position: fixed;
   top: 80px;
   right: 0;
-  width: 100%;
-  max-width: 300px;
-  height: calc(100vh - 72px);
+  height: fit-content;
   background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   z-index: 99;
   padding: 2rem;
   overflow-y: auto;
@@ -94,6 +90,8 @@ nav {
   box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   transform: translateX(100%);
+  margin: 12px;
+  border-radius: 20px;
 }
 
 .dropdown-content a {
