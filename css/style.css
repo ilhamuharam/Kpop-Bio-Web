@@ -77,8 +77,8 @@ nav {
 
 .dropdown-content {
   display: none;
-  position: fixed;
-  top: 80px;
+  position: absolute;
+  top: 100%;
   right: 0;
   height: fit-content;
   background: rgba(255, 255, 255, 0.8);
@@ -90,8 +90,9 @@ nav {
   box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   transform: translateX(100%);
-  margin: 12px;
+  margin: 0.5rem 0 0 0;
   border-radius: 20px;
+  max-width: 90vw;
 }
 
 .dropdown-content a {
@@ -411,10 +412,12 @@ footer {
   }
 
   .dropdown-content {
-    width: 100%;
-    max-width: none;
-    right: 0;
-    left: 0;
+    position: fixed;
+    top: 80px;
+    right: 1rem;
+    width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2rem);
+    left: auto;
     padding: 1rem;
   }
 
